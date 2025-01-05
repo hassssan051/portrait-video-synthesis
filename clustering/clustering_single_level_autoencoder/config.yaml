@@ -1,0 +1,3 @@
+n_clusters: 800
+n_clusters_level_2: 10
+encoder_save_path: "models/encoder_16_with_mead_5_148.pth"
