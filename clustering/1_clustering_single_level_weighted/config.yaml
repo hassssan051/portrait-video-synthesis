@@ -1,0 +1,10 @@
+weights:
+  exp: 0.8
+  eyes: 0.05
+  lip: 0.05
+  t: 0.05
+  yaw_pitch_roll: 0.05
+
+n_clusters: 800
+
+norm_params_path: pkls/norm_params/normalization_params.pkl
