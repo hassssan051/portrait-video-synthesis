@@ -1,0 +1,4 @@
+*.pkl
+*.zip
+*.pth
+__pycache__
