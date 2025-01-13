@@ -1,0 +1,13 @@
+Cluster Analysis Results:
+Total Clusters (n_clusters): 100
+
+Descriptive Statistics for Cluster Sizes:
+Mean: 10122.3
+Median: 9060.0
+Standard Deviation: 4968.407935143812
+Min: 673
+Max: 21512
+25th Percentile (Q1): 6676.0
+75th Percentile (Q3): 13139.25
+Number of clusters with exactly 1 point: 0
+

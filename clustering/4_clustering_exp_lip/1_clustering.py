@@ -44,6 +44,7 @@ print(final_files_save_path)
 # Dictionary to store video frames
 video_dict = defaultdict(list)
 
+removed = 0
 # Populate the video_dict with frame arrays in order
 for key, value in all_descriptors.items():
     parts = key.split('/')
@@ -51,9 +52,14 @@ for key, value in all_descriptors.items():
         video_name = "/".join(parts[:-1])
         frame_number = parts[-1].split('.')[0].split("_")[-1]
     else:
+        if key.split("/")[1][:2] == "02":
+            removed+=1
+            continue
         video_name = parts[1]
-        frame_number = parts[-1].split('.')[0]
+        frame_number = parts[-1].split(')[0]
     video_dict[video_name].append((frame_number, value))
+
+print("Removed data:", removed)
 
 # Sort video_dict by keys
 video_dict = dict(sorted(video_dict.items()))
